@@ -10,10 +10,17 @@
 // Write a function that calculates the price of an order of apples given
 // the quantity bought. No hints this time!
 
-// I AM NOT DONE
+fn calculate_price_of_apples(apple_count: i32) -> i32 {
+    let mut rustbucks_per_apple = 2;
 
-// Put your function here!
-// fn calculate_price_of_apples {
+    if apple_count > 40 {
+        rustbucks_per_apple = 1;
+    }
+
+    apple_count * rustbucks_per_apple
+}
+
+
 
 // Don't modify this function!
 #[test]
